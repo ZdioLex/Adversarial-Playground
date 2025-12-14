@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import './ImageUpload.css';
 
 interface ImageUploadProps {
   onImageSelect: (file: File, preview: string) => void;
@@ -11,14 +12,12 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onImageSelect, disabled }) =>
   const [error, setError] = useState<string | null>(null);
 
   const validateFile = (file: File): boolean => {
-    // Check file type
     const validTypes = ['image/jpeg', 'image/png', 'image/jpg'];
     if (!validTypes.includes(file.type)) {
       setError('Invalid file type. Please upload a JPG or PNG image.');
       return false;
     }
 
-    // Check file size (max 10MB)
     const maxSize = 10 * 1024 * 1024;
     if (file.size > maxSize) {
       setError('File too large. Maximum size is 10MB.');

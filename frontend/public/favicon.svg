@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glitchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Shield background -->
+  <path d="M50 5 L90 20 L90 45 C90 70 70 90 50 95 C30 90 10 70 10 45 L10 20 Z"
+        fill="url(#shieldGrad)" stroke="#4f46e5" stroke-width="2"/>
+
+  <!-- Inner shield highlight -->
+  <path d="M50 12 L82 24 L82 45 C82 65 65 82 50 87 C35 82 18 65 18 45 L18 24 Z"
+        fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+
+  <!-- AI Brain/Neural network icon -->
+  <circle cx="50" cy="45" r="18" fill="none" stroke="white" stroke-width="2.5"/>
+
+  <!-- Neural connections -->
+  <circle cx="50" cy="45" r="5" fill="white"/>
+  <circle cx="38" cy="38" r="3" fill="white"/>
+  <circle cx="62" cy="38" r="3" fill="white"/>
+  <circle cx="38" cy="52" r="3" fill="white"/>
+  <circle cx="62" cy="52" r="3" fill="white"/>
+
+  <line x1="50" y1="45" x2="38" y2="38" stroke="white" stroke-width="1.5"/>
+  <line x1="50" y1="45" x2="62" y2="38" stroke="white" stroke-width="1.5"/>
+  <line x1="50" y1="45" x2="38" y2="52" stroke="white" stroke-width="1.5"/>
+  <line x1="50" y1="45" x2="62" y2="52" stroke="white" stroke-width="1.5"/>
+
+  <!-- Glitch/Attack effect lines -->
+  <rect x="15" y="30" width="25" height="3" fill="url(#glitchGrad)" opacity="0.7" rx="1"/>
+  <rect x="60" y="55" width="20" height="3" fill="url(#glitchGrad)" opacity="0.7" rx="1"/>
+  <rect x="25" y="60" width="15" height="2" fill="url(#glitchGrad)" opacity="0.5" rx="1"/>
+
+  <!-- Lock keyhole (security) -->
+  <path d="M50 68 L50 75" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="50" cy="68" r="4" fill="white"/>
+</svg>

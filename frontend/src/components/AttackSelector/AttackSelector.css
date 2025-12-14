@@ -1,0 +1,131 @@
+.attack-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 0.25rem;
+  background-color: var(--bg-tertiary);
+  padding: 0.2rem;
+  border-radius: 8px;
+}
+
+.category-tabs .tab {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.category-tabs .tab:hover:not(:disabled) {
+  color: var(--text-primary);
+}
+
+.category-tabs .tab.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.category-tabs .tab.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.model-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: var(--bg-tertiary);
+  border-radius: 8px;
+}
+
+.model-selection label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.model-selection select {
+  padding: 0.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+}
+
+.attack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.attack-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.attack-btn {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.attack-btn:hover:not(:disabled) {
+  border-color: var(--primary-color);
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.attack-btn.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.attack-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.attack-description {
+  padding: 0.6rem;
+  background-color: var(--bg-tertiary);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.attack-description p {
+  margin: 0;
+}
+
+.params-section h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .model-selection {
+    grid-template-columns: 1fr;
+  }
+
+  .category-tabs {
+    flex-direction: column;
+  }
+}

@@ -1,9 +1,17 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-python-multipart==0.0.6
-torch>=2.0.0
-torchvision>=0.15.0
-numpy>=1.24.0
-opencv-python>=4.8.0
-Pillow>=10.0.0
-scipy>=1.11.0
+# FastAPI and server
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-multipart==0.0.9
+pydantic==2.9.0
+starlette==0.38.0
+
+# PyTorch (torch 2.1 + torchvision 0.16 is a stable combination)
+torch==2.1.0
+torchvision==0.16.0
+
+# Vision Transformer support
+timm==0.9.16
+
+# Image processing
+numpy==1.26.4
+Pillow==10.4.0

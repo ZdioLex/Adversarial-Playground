@@ -1,0 +1,77 @@
+.param-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.param-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.param-row label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.param-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  min-width: 90px;
+}
+
+.param-row input[type="range"] {
+  flex: 1;
+  accent-color: var(--primary-color);
+}
+
+.param-row input[type="number"] {
+  width: 80px;
+  padding: 0.35rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+}
+
+.param-value {
+  font-family: monospace;
+  font-size: 0.8rem;
+  min-width: 45px;
+  text-align: right;
+}
+
+.checkbox-row {
+  margin-top: 0.25rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.param-hint {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  margin-left: 96px;
+  margin-top: 0.1rem;
+}
+
+.param-hint.target-class-name {
+  color: var(--primary-color);
+  opacity: 1;
+  font-weight: 500;
+}

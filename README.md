@@ -23,9 +23,7 @@ http://localhost:5173
 
 Features
 
-Three attack methods: FGSM, PGD, DCT
-
-Configurable parameters: epsilon, alpha, steps, freq_threshold
+Three attack strategies: Universal, CNN-Only, Vit-Only
 
 GPU acceleration: automatically detects and uses CUDA
 
@@ -34,5 +32,3 @@ Model stays in memory: loaded once at startup to avoid repeated loading
 Real-time results: prediction comparison (original vs adversarial), attack success state, perturbation statistics
 
 Drag-and-drop upload: supports JPG/PNG image uploads
-
-Responsive design: mobile-friendly

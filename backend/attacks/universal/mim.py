@@ -32,7 +32,7 @@ from ..utils import ParamSpec, AttackSpec, normalize, denormalize
 
 ATTACK_SPEC = AttackSpec(
     id="mim",
-    name="MIM",
+    name="MI-FGSM",
     description="Momentum Iterative Method - Iterative attack with momentum for transferability",
     category="universal",
     params=[
